@@ -6,7 +6,22 @@ v0.0.1
 
 Demo project for Docker for Developers talk. Clipboard as a service.
 
-Requires a redis server.
+```
+$ webclip --help
+usage: webclip [-h] [--copy COPY] [--paste] [--user USER]
+               [--redis-server REDIS_SERVER]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --copy COPY
+  --paste
+  --user USER
+  --redis-server REDIS_SERVER
+```
+
+## Environmental Variables
+- WEBCLIP_USER: Checked for a username if ```--user``` isn't present
+- WEBCLIP_REDIS_SERVER: Check for a server if ```--redis-server``` isn't present
 
 # Author
 Brian Balsamo <brian@brianbalsamo.com>
